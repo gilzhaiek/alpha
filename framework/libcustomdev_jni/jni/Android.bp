@@ -1,0 +1,50 @@
+cc_library_shared {
+    name: "libcustomdev_jni",
+    defaults: ["libcustomdev-libs"],
+
+    cflags: [
+        "-Wall",
+        "-Werror",
+        "-Wno-unused-parameter",
+
+        "-DEGL_EGLEXT_PROTOTYPES",
+        "-DGL_GLEXT_PROTOTYPES",
+    ],
+
+    srcs: [
+        "com_customdev_CustomPowerManagerService.cpp",
+        "onload.cpp",
+    ],
+
+    include_dirs: [
+        "frameworks/base/libs",
+        "frameworks/native/services",
+        "system/gatekeeper/include",
+    ],
+}
+
+cc_defaults {
+    name: "libcustomdev-libs",
+    shared_libs: [
+        "libandroid_runtime",
+        "libandroidfw",
+        "libbase",
+        "libappfuse",
+        "libbinder",
+        "libcutils",
+        "libcrypto",
+        "liblog",
+        "libhardware",
+        "libhardware_legacy",
+        "libhidlbase",
+        "libmtp",
+        "libnativehelper",
+        "libsuspend",
+        "libhidlbase",
+        "libhidltransport",
+        "libhwbinder",
+        "libutils",
+        "android.hardware.power@1.0",
+        "android.hardware.power@1.1",
+    ]
+}

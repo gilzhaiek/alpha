@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+  <library name="com.customdev.service.powermanager"
+    file="/system/framework/com.customdev.service.powermanager.jar"/>
+</permissions>
+

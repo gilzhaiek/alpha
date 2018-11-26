@@ -1,0 +1,19 @@
+java_library {
+    name: "com.customdev",
+
+    aidl: {
+        include_dirs: [
+            "device/eightman/alpha/framework/customdevservice",
+            "frameworks/native/aidl/binder",
+        ],
+    },
+    srcs: [
+        "java/**/*.java",
+    ],
+
+    libs: [
+        "com.customdev.service.powermanager",
+        "android.hardware.power-V1.0-java",
+    ],
+ }
+

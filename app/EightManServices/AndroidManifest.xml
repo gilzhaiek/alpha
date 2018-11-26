@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.eightman"
+  android:sharedUserId="android.uid.system">
+
+  <application android:name=".EightManServerApp" android:persistent="true">
+    <uses-library android:name="com.customdev.service.powermanager" />
+    <uses-library android:name="com.customdev" />
+  </application>
+
+</manifest>
+
