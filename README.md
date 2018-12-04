@@ -6,3 +6,4 @@ AOSP Custom "generic" emulator
 * The entire code needs to pass CTS.
 * The code needs to compile on Android 9 Pie (PPR2.181005.003.A1).
 
+Full article: https://medium.com/@gilzhaiek/connecting-a-native-hidl-project-treble-to-a-custom-system-service-2194c9ed7e91
